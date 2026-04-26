@@ -49,7 +49,7 @@ const [acumulada, setAcumulada] = useState<Posicion[]>([]);
     };
     const fetchAcumulada = async () => {
     try {
-        const res = await fetch(`${BASE_URL}/leaderboard/acumulada`);
+        const res = await fetch(`${BASE_URL}/leaderboard/positions-acumulated`);
         const json = await res.json();
         setAcumulada(Array.isArray(json.data) ? json.data : []);
     } catch (e) { console.error(e); }
