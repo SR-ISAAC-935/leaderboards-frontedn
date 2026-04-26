@@ -1,0 +1,19 @@
+/* Quitar el borde rojo de validación por defecto de Bootstrap/Navegador */
+.custom-input:invalid {
+  box-shadow: none !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Forzar que el color de texto sea siempre blanco desde el inicio */
+.custom-input {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: white !important; /* Esto evita que el navegador lo ponga negro o gris al inicio */
+}
+
+/* Controlar el color cuando el usuario hace clic (Focus) */
+.custom-input:focus {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid var(--accent) !important; /* Tu morado */
+  color: white !important;
+  box-shadow: 0 0 8px var(--accent-border) !important;
+}

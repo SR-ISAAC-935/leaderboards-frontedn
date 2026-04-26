@@ -1,0 +1,39 @@
+/* Login.css o index.css */
+
+/* Fondo con gradiente oscuro estilo deportivo */
+body {
+  background: transparent !important;
+  color: rgb(29, 147, 226);
+}
+
+/* Efecto de cristal para la tarjeta */
+.glass-card {
+  background: rgba(54, 57, 75, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Sombra para el título principal */
+.shadow-text {
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para los inputs de Bootstrap */
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.form-control:focus {
+  background-color: #2e303a !important;
+  color: rgb(126, 0, 0) !important;
+  border: 1px solid #aa3bff !important; /* Tu color accent morado */
+}
+
+.btn-primary {
+  background-color: #aa3bff !important; /* Tu color accent */
+  border: none !important;
+}
+
+.bg-primary {
+  background-color: #aa3bff !important;
+}
