@@ -44,6 +44,7 @@ const [acumulada, setAcumulada] = useState<Posicion[]>([]);
         try {
             const res = await fetch(`${BASE_URL}/leaderboard/positions/${SEASON_ID}`);
             const json = await res.json();
+            console.log(json);
             setPosiciones(Array.isArray(json.data) ? json.data : []);
         } catch (e) { console.error(e); }
     };
