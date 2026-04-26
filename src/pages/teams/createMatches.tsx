@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import JornadaFutbol from "../../Components/jornadaFutbol";
-import { Button, Container, Form, InputGroup } from "react-bootstrap";
+import { Button, Container, Form } from "react-bootstrap";
 import toast from "react-hot-toast";
 
 type Partido = {

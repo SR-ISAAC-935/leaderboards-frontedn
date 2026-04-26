@@ -1,5 +1,5 @@
 import { useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { Button, Container } from "react-bootstrap";
 import InscripcionEquipos from "../../Components/inscripcionEquipos";
 
@@ -42,7 +42,7 @@ for (let pair of formData.entries()) {
 }
         });
         try {
-           const token = localStorage.getItem("token");
+          
 
 const response = await fetch('https://apileaderboard.onrender.com/leaderboard/upload-teams', {
   method: 'POST',

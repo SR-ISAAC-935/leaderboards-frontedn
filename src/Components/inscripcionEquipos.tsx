@@ -1,5 +1,4 @@
-import { useState } from 'react'; // ← ya no necesitas useState
-import { Form, Button, Card, Container, Row, Col, InputGroup } from 'react-bootstrap';
+import { Form, Card, Container, Row, Col, InputGroup } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import '../CSS/inscripcionEquipos.css';
 

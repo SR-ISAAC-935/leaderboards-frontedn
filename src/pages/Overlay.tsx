@@ -30,6 +30,8 @@ type Partido = {
 };
 
 export default function Overlay() {
+    // Agrega esto junto a los otros useState
+const [acumulada, setAcumulada] = useState<Posicion[]>([]);
     const [posiciones, setPosiciones] = useState<Posicion[]>([]);
     const [partidos, setPartidos] = useState<Partido[]>([]);
     const [shake, setShake] = useState(false);
