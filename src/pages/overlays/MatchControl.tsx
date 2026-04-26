@@ -4,7 +4,7 @@ import { Container, Row, Col, Form, Button, Card, InputGroup } from 'react-boots
 import { motion } from 'framer-motion';
 import toast from 'react-hot-toast';
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'https://apileaderboard.onrender.com/api';
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://apileaderboard.onrender.com';
 
 type Season   = { id: number; current_season: string; };
 type Journey  = { id: number; journey: number; };
