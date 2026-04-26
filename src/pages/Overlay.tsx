@@ -103,6 +103,7 @@ const [acumulada, setAcumulada] = useState<Posicion[]>([]);
 
             // Recargar posiciones desde BD
             fetchPosiciones();
+            fetchAcumulada();
         });
 
         return () => {
