@@ -190,7 +190,7 @@ const [acumulada, setAcumulada] = useState<Posicion[]>([]);
                             </tr>
                         </thead>
                         <tbody>
-                            {posiciones.map((p, i) => (
+                            {acumulada.map((p, i) => (
                                 <tr key={i} style={{
                                     backgroundColor: getRowColor(p.club_name, partidos),
                                     transition: 'background-color 0.5s ease',
