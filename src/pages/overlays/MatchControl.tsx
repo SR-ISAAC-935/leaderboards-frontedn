@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 import { io } from 'socket.io-client';
 
 const SOCKET_URL = 'https://apileaderboard.onrender.com';
-const BASE_URL = 'https://apileaderboard.onrender.com';
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://apileaderboard.onrender.com/api';
 
 type Season   = { id: number; current_season: string; };
 type Journey  = { id: number; journey: number; };
